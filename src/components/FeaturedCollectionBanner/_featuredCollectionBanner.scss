@@ -1,0 +1,28 @@
+.featuredCollectionBanner {
+  display: flex;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+  background-image: url("../../assets/images/fallcollection.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+
+    h4 {
+      padding-bottom: 1rem;
+    }
+
+    p {
+      padding: 2rem 0;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    background-size: 200%;
+    background-position: left;
+  }
+}

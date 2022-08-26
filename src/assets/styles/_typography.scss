@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Valky";
+  src:  url("../fonts/Valky.otf") format("opentype"),
+        url("../fonts/ValkyRegular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+body {
+  font-family: $bodyFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headerFont;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, select, input, textarea {
+  font-family: $bodyFont;
+}
+
+.section-title {
+  font-size: 60px;
+}
+
+.subtitle {
+  color: $brown;
+  font-family: $bodyFont;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}

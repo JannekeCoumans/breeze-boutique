@@ -1,0 +1,43 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: $pink25;
+
+  .nav__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .nav__items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 2rem;
+    }
+  }
+
+  .nav__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .nav__wrapper {
+      display: none;
+    }
+  }
+}

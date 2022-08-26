@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: calc(1248px + 12rem);
+  padding: 0 6rem;
+  margin: 0 auto; 
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 3rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 0 2rem;
+  }
+
+  @media screen and (max-width: 567px) {
+    padding: 0 1.5rem;
+  }
+}

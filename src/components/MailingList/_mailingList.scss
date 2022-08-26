@@ -1,0 +1,33 @@
+.mailingList {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  background-image: url("../../assets/images/newsletterimage.png");
+  background-size: cover;
+  background-position: center right;
+  padding: 5rem 0;
+
+  &__wrapper {
+    &--content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 540px;
+
+      .section-title {
+        padding: 1rem 0 2rem 0;
+      }
+
+      input {
+        width: 100%;
+        max-width: 530px;
+        margin-bottom: 1rem;
+      }
+
+      .btn {
+        margin: auto;
+      }
+    }
+  }
+}

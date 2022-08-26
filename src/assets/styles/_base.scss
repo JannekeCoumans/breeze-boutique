@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $pink25;
+}
+
+.btn {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  border: 2px solid $pink25;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: .2s;
+
+  &-brown {
+    background-color: $brown;
+    color: $pink25;
+  }
+
+  &:hover {
+    box-shadow: 0px 6px 6px rgba(0,0,0,0.3);
+    transform: scale(1.04);
+    transition: .25s;
+  }
+}
+
+input {
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: .8rem 1rem;
+
+  &::placeholder {
+    color: black;
+    font-weight: 600;
+  }
+
+  &:focus {
+    outline: 0;
+    border-bottom: 2px solid $brown;
+  }
+}

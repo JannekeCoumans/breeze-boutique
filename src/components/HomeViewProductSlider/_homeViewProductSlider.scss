@@ -1,0 +1,11 @@
+.homeViewProductSlider {
+    position: relative;
+  .overlaybox {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 280px;
+    height: 400px;
+    background-color: rgba($pink, .5);
+  }
+}

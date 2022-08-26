@@ -1,0 +1,23 @@
+// base
+@import "./variables";
+@import "./animations";
+@import "./base";
+@import "./functions";
+@import "./mixins";
+@import "./typography";
+@import "./utilities";
+
+// components
+@import "../../components/CollectionSlider/collectionSlider";
+@import "../../components/FeaturedCollectionBanner/featuredCollectionBanner";
+@import "../../components/Footer/footer";
+@import "../../components/HomeViewAbout/homeViewAbout";
+@import "../../components/HomeViewCollections/homeViewCollections";
+@import "../../components/HomeViewHeader/homeViewHeader";
+@import "../../components/HomeViewNewIn/homeViewNewIn";
+@import "../../components/HomeViewProductSlider/homeViewProductSlider";
+@import "../../components/MailingList/mailingList";
+@import "../../components/Nav/nav";
+
+// views
+@import "../../views/HomeView/homeView";

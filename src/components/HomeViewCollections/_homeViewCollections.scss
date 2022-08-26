@@ -1,0 +1,71 @@
+.homeViewCollections {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    &--item {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      height: 615px;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(0deg, rgba($brown, 0.5), transparent);
+        z-index: -1;
+      }
+
+      h1 {
+        color: white;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding: 4rem;
+
+        span {
+          display: block;
+        }
+      }
+
+      &:nth-child(3) {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    &__wrapper {
+      gap: 2rem;
+      &--item {
+        height: 300px;
+        h1 {
+          font-size: 1.2rem;
+          padding: 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
