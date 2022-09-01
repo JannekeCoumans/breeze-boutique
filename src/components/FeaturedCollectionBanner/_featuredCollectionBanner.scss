@@ -6,6 +6,7 @@
   background-image: url("../../assets/images/fallcollection.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   &__wrapper {
     width: 100%;
@@ -22,7 +23,7 @@
   }
 
   @media screen and (max-width: 1024px) {
-    background-size: 200%;
+    background-size: 220%;
     background-position: left;
   }
 }
